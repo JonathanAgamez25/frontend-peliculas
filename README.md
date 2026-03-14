@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🎬 Frontend - Plataforma de Películas y Series
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**IU Digital de Antioquia | Proyecto Integrado 2**  
+**Docente:** Federico Henao  
+**Estudiante:** Jonatan D. Ávila Agamez  
+**Período:** 2026-1
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📋 Descripción del proyecto
 
-### `npm start`
+Aplicación web desarrollada con ReactJS que permite gestionar una plataforma de películas y series. Se comunica con una API REST desarrollada en NodeJS para realizar operaciones CRUD sobre los módulos de Géneros, Directores, Productoras, Tipos y Media (Películas y Series).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologías usadas
 
-### `npm test`
+- **ReactJS** - Librería principal para la interfaz de usuario
+- **Tailwind CSS** - Estilos y diseño responsive
+- **Axios** - Comunicación con la API REST
+- **React Router DOM** - Navegación entre páginas
+- **React Confirm Alert** - Alertas de confirmación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✅ Requisitos previos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js v18 o superior
+- npm v9 o superior
+- API REST de películas corriendo en `http://localhost:3000`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Instalación
 
-### `npm run eject`
+1. Clona el repositorio:
+```bash
+git clone https://github.com/JonathanAgamez25/frontend-peliculas.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Entra a la carpeta del proyecto:
+```bash
+cd frontend-peliculas
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instala las dependencias:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ▶️ Cómo ejecutar el frontend
 
-## Learn More
+1. Asegúrate de que la API REST esté corriendo en `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Ejecuta el frontend en el puerto 3001:
+```bash
+# En PowerShell
+$env:PORT=3001
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Abre el navegador en `http://localhost:3001`
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📱 Módulos de la aplicación
 
-### Analyzing the Bundle Size
+### 🎭 Géneros
+Permite crear, editar, eliminar y listar los géneros cinematográficos. Cada género tiene nombre, descripción y estado (activo/inactivo).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🎥 Directores
+Gestión completa de directores de cine. Incluye nombre y estado (activo/inactivo).
 
-### Making a Progressive Web App
+### 🏢 Productoras
+Administración de productoras cinematográficas. Incluye nombre, slogan, descripción y estado (activo/inactivo).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 📂 Tipos
+Gestión de tipos de producción (Película, Serie). Incluye nombre y descripción.
 
-### Advanced Configuration
+### 🎬 Películas y Series (Media)
+Módulo principal que permite registrar producciones cinematográficas con los siguientes campos:
+- Serial único
+- Título
+- Sinopsis
+- URL
+- Imagen de portada
+- Año de estreno
+- Género, Director, Productora y Tipo asociados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🔗 Repositorio del Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+La API REST que consume este frontend se encuentra en:  
+👉 https://github.com/JonathanAgamez25/api-peliculas
