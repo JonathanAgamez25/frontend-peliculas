@@ -1,0 +1,85 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+body {
+  background-color: #141414;
+  color: #f9fafb;
+}
+
+.swal2-container {
+  z-index: 99999 !important;
+}
+
+.swal2-popup {
+  z-index: 99999 !important;
+}
+
+.react-confirm-alert-button-group button:first-child {
+  background-color: #e3342f !important;
+  color: white !important;
+  border-radius: 6px !important;
+  padding: 8px 16px !important;
+}
+
+.react-confirm-alert-button-group button:last-child {
+  background-color: #6c757d !important;
+  color: white !important;
+  border-radius: 6px !important;
+  padding: 8px 16px !important;
+}
+
+.react-confirm-alert-body {
+  border-radius: 10px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.react-confirm-alert-body h1 {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: #1a1a1a !important;
+}
+
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+input,
+select,
+textarea {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+  border-color: #374151 !important;
+}
+
+input::placeholder {
+  color: #9ca3af !important;
+}
+
+form,
+.bg-gray-100 {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+  border-radius: 8px !important;
+}
+
+label {
+  color: #d1d5db !important;
+}
+
+table {
+  background-color: #1f2937 !important;
+}
+
+tr {
+  border-color: #374151 !important;
+}
+
+tr:hover {
+  background-color: #374151 !important;
+}
+
+td {
+  color: #f9fafb !important;
+  border-color: #374151 !important;
+}
