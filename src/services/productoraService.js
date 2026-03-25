@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:3000/api/productoras";
+const API = "https://api-peliculas-production-7b14.up.railway.app/api/productoras";
 
 export const getProductoras = () => axios.get(API);
 export const getProductoraById = (id) => axios.get(`${API}/${id}`);
