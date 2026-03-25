@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "https://api-peliculas-production-7b14.up.railway.app/api/media";
+const API = "https://api-peliculas-production-7b14.up.railway.app/api/medias";
 
 export const getMedias = () => axios.get(API);
 export const getMediaById = (id) => axios.get(`${API}/${id}`);
