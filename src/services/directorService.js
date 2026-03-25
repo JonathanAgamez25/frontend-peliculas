@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:3000/api/directores";
+const API = "https://api-peliculas-production-7b14.up.railway.app/api/directores";
 
 export const getDirectores = () => axios.get(API);
 export const getDirectorById = (id) => axios.get(`${API}/${id}`);
